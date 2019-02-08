@@ -148,7 +148,8 @@ def shoe_size(name)
 end
 
 def team_colors(name)
-  colors =[]
+  t_colors =[]
   team = find_the_team(name)
-  team.fetch(:colors)
+  t_colors = team.fetch(:colors)
+  t_colors
 end
