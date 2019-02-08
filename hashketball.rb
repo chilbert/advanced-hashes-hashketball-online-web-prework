@@ -154,6 +154,7 @@ def team_colors(team_name)
 end
 
 def team_names
-
-
+  teams.collect do |t|
+    t.fetch(:team_name)
+  end
 end
