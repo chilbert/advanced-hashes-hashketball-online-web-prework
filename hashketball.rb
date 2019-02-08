@@ -131,9 +131,6 @@ end
 team
 
 def find_the_team(team_name)
-  teams.find {|team| team.fetch(:team_name) == team_name}
-end
-def find_the_team(team_name)
   team.find {|team| team.fetch(:team_name) == team_name}
 end
 
