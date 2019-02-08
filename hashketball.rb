@@ -124,6 +124,14 @@ def players
   game_hash[:home][:players].merge(game_hash[:away][:players])
 end
 
+def team
+  game_hash[:home][:team_name].merge(game_hash[:away][:team_name])
+end
+
+def find_the_team(name)
+  team.fetch(name)
+end
+
 def find_the_player(name)
   players.fetch(name)
 end
@@ -137,5 +145,9 @@ end
 def shoe_size(name)
   player = find_the_player(name)
   player.fetch(:shoe)
+end
 
+def team_colors(name)
+  team = find_the_team(name)
+  team.fetch(:colors)
 end
