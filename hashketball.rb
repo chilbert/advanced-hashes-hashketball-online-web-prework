@@ -129,7 +129,7 @@ end
 
 def find_the_player
   game_hash[:location][]
-  
+
 end
 
 
