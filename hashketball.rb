@@ -121,10 +121,10 @@ def game_hash
 end
 
 def players
-  home = game_hash[:home][:players]
-  away = game_hash[:away][:players]
-  all = home + away
-  all
+  home_players = game_hash[:home][:players]
+  away_players = game_hash[:away][:players]
+  all_players = home_players + away_players
+  all_players
 end
 
 def find_the_player(name)
