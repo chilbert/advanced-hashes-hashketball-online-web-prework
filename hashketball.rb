@@ -124,7 +124,7 @@ def players
   game_hash[:home][:players].merge(game_hash[:away][:players])
 end
 
-def team
+def teams
   game_hash.values
 end
 
