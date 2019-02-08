@@ -128,6 +128,8 @@ def team
   game_hash[:home][:team_name].merge(game_hash[:away][:team_name])
 end
 
+team
+
 def find_the_team(name)
   team.fetch(name)
 end
