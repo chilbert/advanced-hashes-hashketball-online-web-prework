@@ -120,6 +120,13 @@ def game_hash
 
 end
 
+def players
+  home = game_hash[:home][:players]
+  away = game_hash[:away][:players]
+  all = home + away
+  all
+end
+
 def find_the_player(name)
   players.fetch(name)
 end
